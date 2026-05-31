@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grh.FormulaireEmployeController">
+   <children>
+      <VBox layoutX="32.0" layoutY="32.0" prefHeight="200.0" prefWidth="100.0" spacing="12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-23.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label prefHeight="19.0" prefWidth="273.0" text="INFORMATIONS EMPLOYE:" textFill="#09117c">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Matricule :" textFill="#696b75">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtMatricule" prefHeight="25.0" prefWidth="218.0" promptText="Saisir la matricule...">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Nom :" textFill="#696b75">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtNomEmp" promptText="Entrer le nom ...">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Prénom :" textFill="#696b75">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtPrenomEmp" promptText="Entrer le prénom...">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="30.0" layoutY="239.0" text="Poste :" textFill="#696b75">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPosteEmp" promptText="Entrer le poste..." />
+            <Label layoutX="30.0" layoutY="318.0" text="Salaire :" textFill="#696b75">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSalaireEmp" layoutX="30.0" layoutY="345.0" promptText="Entrer le salaire ..." />
+            <Label layoutX="30.0" layoutY="382.0" text="Statut :" textFill="#696b75">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStatutEmp" layoutX="30.0" layoutY="409.0" promptText="Entrer le statut..." />
+            <Label fx:id="cp" layoutX="30.0" layoutY="446.0" text="Département :" textFill="#696b75">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbDepartementEmp" prefWidth="150.0" />
+            <HBox alignment="CENTER" prefHeight="125.0" prefWidth="739.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Button fx:id="buttonAjouter" mnemonicParsing="false" onAction="#onEnregistrerNouveauEmploye" prefWidth="100.0" text="Enregistrer" textFill="#1c8a2b">
+                     <font>
+                        <Font name="Georgia Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonAnnuler" mnemonicParsing="false" onAction="#onFermerFormulaire" prefWidth="100.0" text="Annuler" textFill="#da4831">
+                     <font>
+                        <Font name="Georgia Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
